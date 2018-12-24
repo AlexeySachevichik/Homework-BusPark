@@ -1,0 +1,28 @@
+#news {
+	padding-bottom: 20px;
+	background: $grayBg;
+	
+	.newsTimeDate {
+
+		.newsDate {
+			float: left;
+			margin-left: 30px;
+		}
+
+		.newsTime {
+			float: right;
+			margin-right: 30px;
+		}
+		
+		.newsDate,
+		.newsTime {
+			font-size: 1.3em;
+
+			span {
+				font-size: 14px;
+				margin-right: 5px;
+				color: $calendar;
+			}
+		}
+	}
+}

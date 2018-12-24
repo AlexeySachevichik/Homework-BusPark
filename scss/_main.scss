@@ -1,0 +1,84 @@
+$armsColor1: #0065b3;	// Синий цвет герба
+$armsColor2: #fff;		// Белый цвет герба
+$bodyBg: #2b3e50;		// Цвет фона страницы
+$bodyBgLight: #596c7e;	// 
+$footerBg: #202222;		// Цыет фона подвала сайта
+
+%shadow { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+%shadowWhite { text-shadow: 0 1px 0 #fff; }
+%borderRadiusWindows { border-radius: 2px; }
+
+
+
+@import "slider";
+@import "news";
+@import "services";
+@import "maps";
+@import "addit";
+@import "footer";
+
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	@extend %shadowWhite;
+	border-color: #ddd;
+}
+
+.bus {
+	display: inline-block;
+	// width: 30px; 
+	margin: 1px 0;
+	border-radius: 3px;
+	background: #5cb85c - 10;
+	color: #fff;
+	font-weight: 700;
+	padding: 0 3px;
+	text-align: center;
+	text-transform: uppercase;
+	text-indent: 0 !important;
+}
+
+.linkStreet {
+	
+}
+
+
+.navbar {
+	background: $bodyBg;
+	position: fixed;
+	margin-bottom: 0;
+	z-index: 9999;
+	border-color: $bodyBg;
+
+	.navbar-brand {
+		padding: 5px 10px;
+	}
+
+	.navbar-nav > li > a {
+		font-size: 1.1em;
+		padding: 15px 10px;
+		color: #eee;
+
+	}
+
+	.navbar-nav > .open > a {
+		background: $bodyBgLight !important;
+	}
+
+	.navbar-toggle:hover,
+	.navbar-toggle:focus {
+   		background-color: $bodyBgLight;
+	}
+
+	.navbar-collapse {
+		position: relative;
+		z-index: 9999;
+		max-height: 100%;
+		bottom: 0;
+	}
+
+	.dropdown-menu {
+		left: -1px;
+	}
+}

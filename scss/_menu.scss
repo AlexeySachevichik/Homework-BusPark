@@ -1,0 +1,49 @@
+.navbar {
+	position: fixed;
+	z-index: 9999;
+	margin-bottom: 0;
+	background: $bodyBg;
+	border-color: $bodyBg;
+
+	.logo {
+		position: relative;
+		z-index: 9999 !important;
+		float: left;
+		width: 54px;
+		height: 50px;
+		padding: 5px 10px;
+		cursor: pointer;
+
+        img {
+          width: 34px;
+          height: 40px;
+        }
+	}
+
+	.navbar-nav > li > a {
+		font-size: 1.1em;
+		padding: 15px 10px;
+		color: $grayBgLight;
+
+	}
+
+	.navbar-nav > .open > a {
+		background: $bodyBgLight !important;
+	}
+
+	.navbar-toggle:hover,
+	.navbar-toggle:focus {
+   		background-color: $bodyBgLight;
+	}
+
+	.navbar-collapse {
+		position: relative;
+		z-index: 9998;
+		max-height: 100%;
+		bottom: 0;
+	}
+
+	.dropdown-menu {
+		left: -1px;
+	}
+}

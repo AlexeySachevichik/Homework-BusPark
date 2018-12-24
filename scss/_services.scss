@@ -1,0 +1,57 @@
+#services {
+	background: $bodyBgLight;
+	padding-bottom: 20px;
+
+	.blockItem {
+		padding: 5px;
+	}
+
+	h4 {
+		text-align: center;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	.img {
+		display: block;
+		width: 100%;
+		height: auto;
+
+		img { width: 100%; }
+	}
+
+	.btn-link {
+		color: $bodyBg;
+		background-color: $btnLink;
+		&:hover {
+			color: $bodyBg;
+			background-color: $grayBg;
+		}
+	}
+
+	&.full {
+		
+		.blockItem {
+			padding: 20px;
+		}
+
+		h3 {
+			margin-top: 30px;
+			margin-left: 30px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		.imgServices {
+			overflow: hidden;
+			margin-bottom: 20px; 
+
+			img {
+				margin-top: -100px;
+				width: 100%;
+			}
+		}
+
+	}
+}

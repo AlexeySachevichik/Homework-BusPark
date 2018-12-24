@@ -1,0 +1,11 @@
+#maps {
+	background: $bodyBg;
+	padding-bottom: 20px;
+}
+
+.yMaps {
+	@extend %shadow;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}

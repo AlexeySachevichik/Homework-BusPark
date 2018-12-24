@@ -1,0 +1,153 @@
+$bodyBg: #2b3e50;		// Цвет фона страницы
+$bodyBgLight: #596c7e;	// Цвет фона страницы светлее
+$footerBg: #202222;		// Цыет фона подвала сайта
+$busBg: #4CAF50;		// Цвет фона ссылок автобусов
+$grayBg: #ddd;			// Серый цвет
+$grayBgLight: #eee;		// Светло-серый цвет 
+
+$busColor: #fff;		// Цвет ссылки автобусов
+$btnLink: #fff;
+$calendar: #888;
+
+$shadowW: #fff;
+$shadowD: $bodyBg;
+$shadowD2: $bodyBgLight;
+$titleLight: #fff;
+
+
+%shadow { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+%shadowWhite { text-shadow: 0 1px 0 $shadowW; }
+%shadowDark  { text-shadow: 0 1px 0 $shadowD; }
+%shadowDark2 { text-shadow: 0 1px 0 $shadowD2; }
+%borderRadiusWindows { border-radius: 2px; }
+
+@import "../scss/menu";
+@import "../scss/slider";
+@import "../scss/news";
+@import "../scss/services";
+@import "../scss/maps";
+@import "../scss/addit";
+@import "../scss/footer";
+@import "../scss/timetable";
+@import "../scss/contact";
+
+
+body {
+	padding-top: 50px;
+}
+
+hr {
+    @extend %shadowWhite;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-color: $grayBg;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+.bus {
+	display: inline-block;
+	margin: 1px 0;
+	border-radius: 3px;
+	background: $busBg;
+	color: $busColor;
+	font-weight: 700;
+	padding: 0 3px;
+	text-transform: uppercase;
+	text-indent: 0 !important;
+}
+
+.street {}
+
+.btn-link {
+	@extend %borderRadiusWindows;
+	@extend %shadow;
+	color: $btnLink;
+	background-color: $bodyBgLight;
+	border: none;
+
+	&:hover {
+		color: $btnLink;
+		background-color: $bodyBg;
+		text-decoration: none;
+	}
+}
+
+.titleDark {
+	@extend %shadowWhite;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.titleLight {
+	@extend %shadowDark;
+	color: $titleLight;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.titleLight2 {
+	@extend %shadowDark2;
+	color: $titleLight;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.blockItem {
+	@extend %borderRadiusWindows;
+	@extend %shadow;
+	background: $grayBgLight;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+	p {
+		text-indent: 1.5em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&:last-child { margin-bottom: 0; }
+}
+
+.more {
+	margin-top: 20px;
+	text-align: center;
+
+	a {
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.bottom {
+	margin-bottom: 20px;
+}
+
+.numTel {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	color: $bodyBg;
+	text-indent: 0 !important;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	span {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-6,
+	.col-sm-3 {
+		margin-bottom: 10px;
+	}
+}

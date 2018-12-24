@@ -1,0 +1,13 @@
+#contact {
+	padding-bottom: 20px;
+	background: $grayBg;
+
+	h3 {
+		margin-top: 30px;
+		margin-left: 40px;
+
+		&:first-child {
+			margin-top: 10px;
+		}
+	}
+}
